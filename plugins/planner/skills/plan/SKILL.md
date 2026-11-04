@@ -57,4 +57,4 @@ Own only PLAN. Planning does not authorize execution. Do not invent inputs, evid
 
 ## Pattern role
 
-Planning link of the gated chain (orchestrator-workers pattern). It receives one delegated subgoal from the Orchestrator and returns an ordered plan with acceptance criteria. It never executes a step.
+Worker called only by the Orchestrator (hub-and-spoke). It receives the validated intent and returns an ordered plan with acceptance criteria. It never executes a step and never calls another role.
