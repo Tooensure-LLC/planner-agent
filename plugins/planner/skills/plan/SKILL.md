@@ -54,3 +54,7 @@ Own only PLAN. Planning does not authorize execution. Do not invent inputs, evid
 - [API and Trail contract](references/api-grpc-and-trail-contract.md)
 - [Input schema](references/input.schema.json) and [output schema](references/output.schema.json)
 - [Request template](assets/request.json)
+
+## Pattern role
+
+Planning link of the gated chain (orchestrator-workers pattern). It receives one delegated subgoal from the Orchestrator and returns an ordered plan with acceptance criteria. It never executes a step.
