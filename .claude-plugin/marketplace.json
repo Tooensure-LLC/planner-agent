@@ -1,0 +1,16 @@
+{
+  "name": "planner-agent",
+  "owner": {
+    "name": "Tooensure"
+  },
+  "metadata": {
+    "description": "Marketplace for the PMCR-O planner plugin."
+  },
+  "plugins": [
+    {
+      "name": "planner",
+      "source": "./plugins/planner",
+      "description": "Derive a bounded, evidence-oriented plan from validated PMCR-O intent."
+    }
+  ]
+}

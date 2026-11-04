@@ -1,0 +1,18 @@
+{
+  "format": "pmcro.agent-commands/v1",
+  "commands": [
+    {
+      "command": "/planner:plan",
+      "agentId": "planner",
+      "skillId": "planner:plan",
+      "phase": "PLAN",
+      "inputMode": "typed-json",
+      "inputSchema": "plugins/planner/skills/plan/references/input.schema.json",
+      "outputSchema": "plugins/planner/skills/plan/references/output.schema.json",
+      "apiReplySchema": "schemas/phase-reply.schema.json",
+      "trailKind": "planner.plan",
+      "pluginMention": "[@planner](plugin://planner@planner-agent)",
+      "invocationPrefix": "I AM the PMCR-O Planner Agent."
+    }
+  ]
+}

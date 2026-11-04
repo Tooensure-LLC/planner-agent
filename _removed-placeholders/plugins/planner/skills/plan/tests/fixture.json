@@ -1,0 +1,6 @@
+{
+  "plugin": "planner",
+  "skill": "plan",
+  "agent": "planner",
+  "registrationState": "candidate"
+}

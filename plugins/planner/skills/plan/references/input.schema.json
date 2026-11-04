@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "/planner:plan typed input",
+  "type": "object",
+  "required": ["raw_seed", "true_intent", "assumptions", "flags", "scope", "unresolved_questions", "validated_resources"],
+  "properties": {
+    "raw_seed": { "type": "string", "minLength": 1 },
+    "true_intent": { "type": "string", "minLength": 1 },
+    "assumptions": { "type": "array", "items": { "type": "string" } },
+    "flags": { "type": "array", "items": { "type": "string" } },
+    "scope": { "type": "string", "minLength": 1, "description": "Bounded scope of the high-level goal, set by the Orchestrator." },
+    "unresolved_questions": { "type": "array", "items": { "type": "string" } },
+    "validated_resources": { "type": "array", "items": { "type": "object" }, "description": "Resources the Orchestrator validated against the catalog. The Planner plans the bare minimum from these only." }
+  },
+  "additionalProperties": false
+}

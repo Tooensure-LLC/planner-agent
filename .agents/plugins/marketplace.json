@@ -1,0 +1,16 @@
+{
+  "name": "planner-agent",
+  "owner": {
+    "name": "Tooensure"
+  },
+  "interface": {
+    "displayName": "Planner Agent"
+  },
+  "plugins": [
+    {
+      "name": "planner",
+      "source": "./plugins/planner",
+      "description": "Derive a bounded, evidence-oriented plan from validated PMCR-O intent."
+    }
+  ]
+}

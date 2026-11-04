@@ -1,0 +1,6 @@
+{
+    "$schema":  "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+    "name":  "planner",
+    "version":  "0.1.0",
+    "description":  "Derive a bounded, evidence-oriented plan from validated PMCR-O intent."
+}

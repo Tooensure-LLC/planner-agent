@@ -1,0 +1,17 @@
+{
+  "format": "pmcro.role-agent/v1",
+  "id": "planner",
+  "marketplace": "planner-agent",
+  "role": "planner",
+  "phase": "PLAN",
+  "command": "/planner:plan",
+  "pluginMention": "[@planner](plugin://planner@planner-agent)",
+  "skillId": "planner:plan",
+  "entrypoint": "plugins/planner/skills/plan/SKILL.md",
+  "inputSchema": "plugins/planner/skills/plan/references/input.schema.json",
+  "outputSchema": "plugins/planner/skills/plan/references/output.schema.json",
+  "apiReplySchema": "schemas/phase-reply.schema.json",
+  "trailKind": "planner.plan",
+  "separateContext": true,
+  "registrationState": "candidate"
+}
