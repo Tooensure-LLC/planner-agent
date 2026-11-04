@@ -55,6 +55,13 @@ Own only PLAN. Planning does not authorize execution. Do not invent inputs, evid
 - [Input schema](references/input.schema.json) and [output schema](references/output.schema.json)
 - [Request template](assets/request.json)
 
+## Quality bar
+
+- Make every acceptance criterion observable and repeatable by a read-only Checker: a file state, command output or named artifact, never a judgment.
+- Keep steps minimal, ordered by dependency, and each independently authorizable.
+- Mark any step that needs human approval before it can be authorized.
+- Plan the smallest set of steps. Do not pre-plan revisions; the Orchestrator owns those.
+
 ## Pattern role
 
 Worker called only by the Orchestrator (hub-and-spoke). It receives the validated intent and returns an ordered plan with acceptance criteria. It never executes a step and never calls another role.
